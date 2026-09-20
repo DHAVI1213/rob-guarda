@@ -77,9 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Verificação de Segurança" },
-      { name: "description", content: "Ambiente protegido para validação de acesso." },
-      { name: "author", content: "Segurança da conexão" },
+      { title: "Marvel Burguer - Delivery" },
+      { name: "description", content: "Cardápio digital do Marvel Burguer - Os melhores hambúrgueres da cidade!" },
+      { name: "author", content: "Marvel Burguer" },
     ],
     links: [
       {
