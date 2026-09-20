@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   SlidersHorizontal,
   X,
+  type LucideIcon,
 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 
@@ -284,14 +285,14 @@ function VerificationPage() {
           </div>
 
           <div className="mt-7 grid grid-cols-3 divide-x divide-border text-center">
-            {[
+            {([
               [LockKeyhole, "SSL ativo"],
               [Fingerprint, "Dados protegidos"],
               [Globe2, "Conexão segura"],
-            ].map(([Icon, label]) => (
-              <div key={label as string} className="flex min-w-0 flex-col items-center gap-2 px-2 text-muted-foreground">
+            ] as Array<[LucideIcon, string]>).map(([Icon, label]) => (
+              <div key={label} className="flex min-w-0 flex-col items-center gap-2 px-2 text-muted-foreground">
                 <Icon className="size-4 text-primary" strokeWidth={1.8} />
-                <span className="text-[10px] font-medium sm:text-xs">{label as string}</span>
+                <span className="text-[10px] font-medium sm:text-xs">{label}</span>
               </div>
             ))}
           </div>
