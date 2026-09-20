@@ -322,7 +322,7 @@ function VerificationPage() {
       </Button>
 
       <div
-        className={`fixed inset-0 z-40 bg-foreground/20 backdrop-blur-[2px] transition-opacity ${panelOpen ? "opacity-100" : "pointer-events-none opacity-0"}`}
+        className={`fixed inset-0 z-40 bg-background/80 backdrop-blur-[3px] transition-opacity ${panelOpen ? "opacity-100" : "pointer-events-none opacity-0"}`}
         onClick={() => setPanelOpen(false)}
         aria-hidden="true"
       />
